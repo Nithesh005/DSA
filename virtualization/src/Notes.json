@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Bubble Sort",
+        "Question": "What is bubble sort?",
+        "Ans": "Bubble sort compares two elements and swaps them."
+    },
+    {
+        "name": "Insertion Sort",
+        "Question": "What is Insertion sort?",
+        "Ans": "Insertion sort compares two elements and swaps them."
+    }
+]
