@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Bubble Sort",
+        "Question": "What is bubble sort?",
+        "Ans": "Bubble sort compares two elements and swaps them."
+    },
+    {
+        "name": "Linked list Data Structure",
+        "Question": "What is Linked list?",
+        "Ans": "Each struct node has a data item and a pointer to another struct node."
+    }
+]
