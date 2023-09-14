@@ -1,20 +1,22 @@
 import './App.css';
 // import { useEffect } from "react";
-import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_dsa/Notes.json';
 import Menu from "./Componentes/Menu";
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import Java_DSA from "./Pages/Java_DSA";
+import Temp_cards from './Pages/Temp_cards';
+import Leetcode from "./Pages/Leetcode";
 function App() {
   return (
     <div className="App">
-      <Menu/>
-      {notesData.map((item, key) => (
-        <div key={key} className='d-flex m-4'>
-          <div className='card p-4'>
-            <h1>{item.name}</h1>
-            <p>Question: {item.Question}</p>
-            <p>Answer: {item.Ans}</p>
-          </div>
-        </div>
-      ))}
+      {/* hai */}
+      <Menu />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/java_dsa" element={<Java_DSA />} />
+          <Route path="/leetcode" element={<Leetcode />} />
+          <Route path="/notes" element={<Temp_cards />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

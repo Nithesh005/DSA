@@ -1,5 +1,16 @@
 [
     {
+        "name": "Selection Sort Algorithm",
+        "Question": "How to sort",
+        "Ans": "Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.",
+        "desc":" <div className='d-flex m-4 card'><div className='p-4'><h1 className='sortName'>Question fied</h1><p style={{backgroundColor:'red'}}>Answer: Answer field</p></div></div>"
+    },
+    {
+        "name": "Heap Sort",
+        "Question": "How to define Heep sort?",
+        "Ans": ""
+    },
+    {
         "name": "Bubble Sort",
         "Question": "What is bubble sort?",
         "Ans": "Bubble sort compares two elements and swaps them."
@@ -9,4 +20,5 @@
         "Question": "What is Linked list?",
         "Ans": "Each struct node has a data item and a pointer to another struct node."
     }
+    
 ]
