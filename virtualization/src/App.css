@@ -17,19 +17,9 @@ nav li a {
     padding: 1rem;
 }
 
-/* .navigation{
-    display: block;
-} */
-/* .ontap_icon:hover .navigation:hover + .navigation {
-    display: block;
-}
-.ontap_icon:hover + .navigation, .navigation:hover{
-    display: block;
-} */
 .ontap_icon {
     padding: 1rem;
     width: fit-content;
-
 }
 
 .sidebar {
@@ -45,13 +35,6 @@ nav li a {
 }
 
 .sidebar a {
-    /* padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #bcb4b4;
-    display: block;
-    transition: 0.3s; */
-
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 15px;
@@ -63,7 +46,6 @@ nav li a {
     color: #ffffff;
     font-size: 21px;
     margin-left: 1rem;
-    overflow-y: hidden;
     white-space: nowrap;
     transition: 0.3s;
 
@@ -81,12 +63,51 @@ nav li a {
 }
 .openbtn{
     padding: 1rem;
-    height: 3rem;
+    height: 4rem;
     display: flex;
     align-items: center;
 
 }
-.parrent_menu{
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
+.profile_image{
+    padding-right: 1rem;
+}
+.Profile_img{
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+.searchInput{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none; /* Remove the default focus outline */
+    border: none;  /* Remove the border */
+}
+.searchBox{
+    color: #ffffff;
+    /* padding: 0.5rem; */
+}
+.SearchIcon{
+    color: white;
 }
 /* navigation bar --end */
+
+/* Below Tablet Screen -- Start */
+@media screen and (max-width:640px) {
+    .openbtn{
+        height: 3rem;
+    }
+    .Profile_img{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+/* Below Tablet Screen -- End */
+
+/* JAvaDSA --start */
+.sortName{
+    font-weight: 700;
+    font-size: large;
+}
+/* JAvaDSA --end */
