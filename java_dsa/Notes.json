@@ -1,5 +1,10 @@
 [
     {
+        "name": "Hash Table",
+        "Question": "Define Hash Table",
+        "Ans": "The Hash table data structure stores elements in key-value pairs where Key- unique integer that is used for indexing the values Value - data that are associated with keys."
+    },
+    {
         "name": "Selection Sort Algorithm",
         "Question": "How to sort",
         "Ans": "Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.",
@@ -8,7 +13,7 @@
     {
         "name": "Heap Sort",
         "Question": "How to define Heep sort?",
-        "Ans": ""
+        "Ans": "pending.."
     },
     {
         "name": "Bubble Sort",

@@ -6,7 +6,7 @@ function Leetcode() {
     return (
         <>
             {notesData.map((item, key) => (
-                <div key={key} className='d-flex m-4 card'>
+                <div key={key} className='d-flex m-4 card' data-aos="zoom-in-left">
                     <div className='p-4'>
                         <h1 className="sortName">{item.problem_name}</h1>
                         <p>Answer: {item.Ans}</p>
