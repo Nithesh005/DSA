@@ -53,7 +53,7 @@ nav li a {
 
 .sidebar a:hover:not(:first-child) {
     color: #ffffff;
-    font-size: 21px;
+    /* font-size: 21px; */
     margin-left: 1rem;
     white-space: nowrap;
     transition: 0.3s;

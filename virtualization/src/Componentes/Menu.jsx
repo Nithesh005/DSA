@@ -48,7 +48,7 @@ function Menu() {
                         <input type="search" name="Search.." id="" placeholder="Search" className="bg-transparent searchBox" />
                     </div>
                     {menuItems.map((item, index) => (
-                        <NavLink key={index} to={item.href} onClick={toggleNav}>{item.text}</NavLink>
+                        <NavLink key={index} to={item.href} onClick={toggleNav}>{index+1}. {item.text}</NavLink>
                     ))}
                 </div>
             </div>
@@ -57,7 +57,7 @@ function Menu() {
             </div>
             <div className="profile_image flex gap-4">
                 <div className="resume_btn ac" onClick={downloadResume}>
-                    Resume
+                    Download Resume
                 </div>
                 <div className="home_btn" onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}>

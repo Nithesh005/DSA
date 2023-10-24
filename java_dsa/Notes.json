@@ -1,5 +1,10 @@
 [
     {
+        "name": "Array List",
+        "Question": "Difference between Array and ArrayList",
+        "Ans": " It serves as a container that holds the constant values.Once an array is created, we cannot change its size. "
+    },
+    {
         "name": "Hash Table",
         "Question": "Define Hash Table",
         "Ans": "The Hash table data structure stores elements in key-value pairs where Key- unique integer that is used for indexing the values Value - data that are associated with keys."
