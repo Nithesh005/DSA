@@ -1,7 +1,6 @@
 import './App.css';
-// import { useEffect } from "react";
-import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_dsa/Notes.json';
-// import notesData from 'file:///home/nithi/DSA/java_dsa/Notes.json';
+// import notesData from 'file:///C:/Nithi-Profile/java_dsa/Notes.json';
+
 // /home/nithi/DSA/java_dsa/Notes.json
 
 import Menu from "./Componentes/Menu";
@@ -18,7 +17,6 @@ function App() {
   AOS.init();
   return (
     <div className="App">
-      {/* hai */}
       <BrowserRouter>
         <Menu />
         <Routes>

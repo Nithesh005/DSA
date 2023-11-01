@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Navigate } from "react-router-dom";
 // import dotenv from 'dotenv';
-import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_dsa/Notes.json';
-const apiUrl = process.env.REACT_APP_API_URL;
+import notesData from 'file:///C:/Nithi-Profile/java_dsa/Notes.json';
+// import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_dsa/Notes.json';
+// const apiUrl = process.env.REACT_APP_API_URL;
 function Java_DSA() {
     // dotenv.config();
     // alert(apiUrl);

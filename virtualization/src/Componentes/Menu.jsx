@@ -25,11 +25,16 @@ function Menu() {
 
     const menuItems = [
         { text: "Java DSA", href: "/Java_DSA" }, // Corrected the href values
-        { text: "Leetcode Problems", href: "/leetcode" },
+        {
+            text: "Leetcode Problems", subItems: [
+                { text: "OtherPlatForm Problems", href: "/leetcode" },
+                { text: "OtherPlatForm Problems2", href: "/leetcode2" }
+            ]
+        },
         { text: "Notes", href: "/notes" },
         { text: "About Me", href: "/aboutme" }
     ];
-    const downloadResume = ()=>{
+    const downloadResume = () => {
         const tempLink = document.createElement('a')
         tempLink.href = resume;
         tempLink.setAttribute('download', 'Nitheshwaran T Resume.pdf');
@@ -48,8 +53,26 @@ function Menu() {
                         <input type="search" name="Search.." id="" placeholder="Search" className="bg-transparent searchBox" />
                     </div>
                     {menuItems.map((item, index) => (
-                        <NavLink key={index} to={item.href} onClick={toggleNav}>{index+1}. {item.text}</NavLink>
+                        <div key={index}>
+                            {item.subItems ? (
+                                // Render a link to the main item
+                                <div className="subItems">
+                                    <NavLink>{index + 1}. {item.text} ^</NavLink>
+                                    {item.subItems.map((subItem, subIndex) => (
+                                            <NavLink key={subIndex} to={subItem.href} onClick={toggleNav} className="subitem">
+                                                {index+1}{subIndex + 1}. {subItem.text}
+                                            </NavLink>
+                                        ))}
+                                </div>
+                            ) : (
+                                // Render a link to the main item and subitems
+                                <div>
+                                    <NavLink key={index} to={item.href} onClick={toggleNav}>{index + 1}. {item.text}</NavLink>
+                                </div>
+                            )}
+                        </div>
                     ))}
+
                 </div>
             </div>
             <div id="main">

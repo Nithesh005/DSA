@@ -1,5 +1,6 @@
 import React from "react";
-import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_leetcode/Notes.json';
+// import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_leetcode/Notes.json';
+import notesData from 'file:///C:/Nithi-Profile/java_leetcode/Notes.json';
 
 function Leetcode() {
 

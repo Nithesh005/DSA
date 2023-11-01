@@ -1,5 +1,11 @@
 [
     {
+        "problem_name" : "palindrome",
+        "input" : "x = 121",
+        "output" : "True",
+        "Explanation": "121 reads as 121 from left to right and from right to left."
+    },
+    {
         "problem_name" : "two sum",
         "Ans" : "Adding two numbers"
     }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_dsa/Notes.json';
+import notesData from 'file:///C:/Nithi-Profile/java_dsa/Notes.json';
+// import notesData from 'file:///C:/Users/nithe/OneDrive/Pictures/Documents/Documents/java/DSA/java_dsa/Notes.json';
 import { RxEnterFullScreen } from 'react-icons/rx';
 function JavaDsaSolution() {
     const { key } = useParams();
