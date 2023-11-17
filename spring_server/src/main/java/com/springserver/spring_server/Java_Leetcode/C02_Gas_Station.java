@@ -1,4 +1,11 @@
-public class Gas_Station {
+package com.springserver.spring_server.Java_Leetcode;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class C02_Gas_Station {
+    @GetMapping(value="/C02_Gas_Station")
     public static int canCompleteCircuit(int[] gas, int[] cost) {
         int totalGas = 0;
         int currentGas = 0;
@@ -20,14 +27,14 @@ public class Gas_Station {
             return startStation;
         }
     }
-    public static void main(String[] args) {
-        int[] gas = {1, 2, 3, 4, 5};
-        int[] cost = {2, 3, 2, 6, 1};
-        int startStation = canCompleteCircuit(gas, cost);
-        if (startStation != -1) {
-            System.out.println("You can start at gas station " + startStation);
-        } else {
-            System.out.println("There is no valid starting station.");
-        }
-    }
+    // public static void main(String[] args) {
+    //     int[] gas = {1, 2, 3, 4, 5};
+    //     int[] cost = {2, 3, 2, 6, 1};
+    //     int startStation = canCompleteCircuit(gas, cost);
+    //     if (startStation != -1) {
+    //         System.out.println("You can start at gas station " + startStation);
+    //     } else {
+    //         System.out.println("There is no valid starting station.");
+    //     }
+    // }
 }

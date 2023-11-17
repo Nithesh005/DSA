@@ -1,4 +1,4 @@
-from flask import Flask, Response ,request, render_template
+from flask import Flask, Response ,request, render_template,jsonify
 import matplotlib.pyplot as plt
 from io import BytesIO
 
@@ -28,7 +28,15 @@ def plot_response():
     
 @app.route('/htmlpage')
 def htmlpage():
-     return render_template('hello.html') 
+    a = 5
+    b = 6
+    data = {"a": 15, "b": 21}
+    return render_template('hello.html', data=data)
+
+
+@app.route('/int')
+def int():
+     return str(5)
 
 @app.route('/problem', methods=['POST'])
 def problem():
