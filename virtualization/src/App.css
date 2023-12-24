@@ -83,7 +83,7 @@ nav li a {
 
 .parrent_menu {
     /* position: relative; */
-    height: 50px;
+    /* height: 50px; */
     z-index: 1;
     top: 0%;
     width: 100%;

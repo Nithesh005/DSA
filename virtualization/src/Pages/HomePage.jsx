@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import '../Assets/css/HomePage.css'
 
 function HomePage() {
     const [inputValue, setInputValue] = useState('');
@@ -25,7 +26,7 @@ function HomePage() {
     return (
         <>
             Home page
-            <input
+            {/* <input
                 type="text" // Use type="text" for text input
                 value={inputValue}
                 style={{ backgroundColor: "grey" }}
@@ -38,7 +39,11 @@ function HomePage() {
                 onClick={handleSubmit}
             >
                 Submit
-            </button>
+            </button> */}
+            <div className="homeParrent">
+                <div className="homeLeft">1</div>
+                <div className="homeRight">2</div>
+            </div>
         </>
     );
 }

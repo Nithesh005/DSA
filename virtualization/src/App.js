@@ -13,11 +13,24 @@ import HomePage from './Pages/HomePage';
 import 'aos/dist/aos.css';
 import PushNotification from './Services/PushNotification';
 import JavaDsaSolution from './Pages/JavaDsaSolution'
+import { useState } from 'react';
+import IndexPage from './Pages/IndexPage';
 function App() {
   AOS.init();
+  const [theme, setTheme] = useState('dark1');
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: theme === 'dark' ? 'black' : 'white' }}>
       <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<IndexPage />} />
+          <Route path="/project" element={<IndexPage />} />
+          <Route path="/about" element={<IndexPage />} />
+          <Route path="/contact" element={<IndexPage />} />
+        </Routes>
+      </BrowserRouter>
+
+
+      {/* <BrowserRouter>
         <Menu />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -27,7 +40,8 @@ function App() {
           <Route path="/notes" element={<Tempcards />} />
         </Routes>
       </BrowserRouter>
-      <PushNotification />
+      <PushNotification /> */}
+
     </div>
   );
 }
