@@ -15,16 +15,20 @@ import PushNotification from './Services/PushNotification';
 import JavaDsaSolution from './Pages/JavaDsaSolution'
 import { useState } from 'react';
 import IndexPage from './Pages/IndexPage';
+import ProjectsPage from './Pages/ProjectsPage';
+import TopNav from './Componentes/TopNav';
+import AboutMePage from './Pages/AboutMePage';
 function App() {
   AOS.init();
   const [theme, setTheme] = useState('dark1');
   return (
     <div className="App" style={{ backgroundColor: theme === 'dark' ? 'black' : 'white' }}>
       <BrowserRouter>
+        <TopNav />
         <Routes>
           <Route path="/" element={<IndexPage />} />
-          <Route path="/project" element={<IndexPage />} />
-          <Route path="/about" element={<IndexPage />} />
+          <Route path="/project" element={<ProjectsPage />} />
+          <Route path="/about" element={<AboutMePage />} />
           <Route path="/contact" element={<IndexPage />} />
         </Routes>
       </BrowserRouter>

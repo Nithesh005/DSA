@@ -16,3 +16,8 @@
     width: -webkit-fill-available;
     position: fixed;
 }
+.parrentdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
