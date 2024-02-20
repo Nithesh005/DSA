@@ -5,15 +5,18 @@ import { Link } from 'react-router-dom';
 
 const TopNav = () => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
-    const isSmallScreen = useMediaQuery('(max-width:767px)');
+    const isSmallScreen = useMediaQuery('(max-width:767px)');    
 
     const handleSidebarToggle = () => {
         setSidebarOpen(!isSidebarOpen);
     };
 
+
+    
+
     return (
         <>
-            <div className="bg-gray-800 p-4 sm:flex md:mt-2 sm:justify-between sm:items-center md:items-center md:mx-8 md:rounded-3xl absolute nav_parrent">
+            <div className="bg-gray-800 p-4 sm:flex md:mt-2 sm:justify-between sm:items-center md:items-center md:mx-8 md:rounded-xl absolute nav_parrent">
                 {/* Logo */}
                 <div className="text-white"><Link to="/">Logo</Link></div>
 

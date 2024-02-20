@@ -15,7 +15,17 @@
 .nav_parrent{
     width: -webkit-fill-available;
     position: fixed;
+    max-height: 60px;
 }
+
+@media (max-width: 640px) {
+    .nav_parrent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .parrentdiv{
     display: flex;
     justify-content: center;
