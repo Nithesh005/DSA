@@ -15,9 +15,12 @@ import PushNotification from './Services/PushNotification';
 import JavaDsaSolution from './Pages/JavaDsaSolution'
 import { useState } from 'react';
 import IndexPage from './Pages/IndexPage';
-import ProjectsPage from './Pages/ProjectsPage';
+import ProjectsPage from './Pages/EventsPage';
 import TopNav from './Componentes/TopNav';
 import AboutMePage from './Pages/AboutMePage';
+import EventsPage from './Pages/EventsPage';
+import ProductsPage from './Pages/ProductsPage';
+import HonursPage from './Pages/HonursPage';
 function App() {
   AOS.init();
   const [theme, setTheme] = useState('dark1');
@@ -27,8 +30,9 @@ function App() {
         <TopNav />
         <Routes>
           <Route path="/" element={<IndexPage />} />
-          <Route path="/project" element={<ProjectsPage />} />
-          <Route path="/about" element={<AboutMePage />} />
+          <Route path="/Events" element={<EventsPage />} />
+          <Route path="/Projects" element={<ProductsPage />} />
+          <Route path="/Honurs" element={<HonursPage />} />
           <Route path="/contact" element={<IndexPage />} />
         </Routes>
       </BrowserRouter>

@@ -7,7 +7,7 @@ import alagappaStu from '../Assets/images/Events/alagappaStu.jpg'
 import mamcet2ndyr from '../Assets/images/Events/mamcet2ndyr.jpg'
 import alagappaclass from '../Assets/images/Events/alagappaclass.jpg'
 
-const ProjectsPage = () => {
+const EventsPage = () => {
     const projectsData = [
         { title: 'Vellamal Intern Program', description: 'Successfully organized and executed the 14-day Vellamal Intern Program.',pic:velamaImg , programAbb:"Vellamal InternShip Program"},
         { title: 'Mamcet Java Trainer', description: 'Guided MAMCET final year students as a Java Trainer, fostering their programming expertise.',pic:Mamcet , programAbb:"Mamcet Java" },
@@ -58,4 +58,4 @@ const ProjectsPage = () => {
         </>
     )
 }
-export default ProjectsPage; 
+export default EventsPage; 

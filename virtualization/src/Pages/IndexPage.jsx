@@ -1,7 +1,7 @@
 import React from 'react';
 import TopNav from '../Componentes/TopNav';
 import NameIntro from '../Componentes/NameIntro';
-import ProjectsPage from '../Pages/ProjectsPage';
+import ProjectsPage from './EventsPage';
 
 const IndexPage = () => {
     

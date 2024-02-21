@@ -23,9 +23,10 @@ const TopNav = () => {
                 {/* Menu for medium and larger screens */}
                 <div className="hidden md:flex">
                     <ul className="flex">
-                        <li className="mx-2 text-white"><Link to="/project">Project</Link></li>
-                        <li className="mx-2 text-white"><Link to="/about">About Me</Link></li>
-                        <li className="mx-2 text-white"><Link to="/contact">Contact Us</Link></li>
+                        <li className="mx-2 text-white"><Link to="/Events">EVENTS</Link></li>
+                        <li className="mx-2 text-white"><Link to="/Projects">PROJECTS</Link></li>
+                        <li className="mx-2 text-white"><Link to="/Honurs">HONURS</Link></li>
+                        {/* <li className="mx-2 text-white"><Link to="/contact">Contact Us</Link></li> */}
                     </ul>
                 </div>
 
