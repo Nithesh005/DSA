@@ -1,22 +1,22 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
-import tempoIot from '../Assets/images/Projects/tempoIot.png'
-import TerionUi from '../Assets/images/Projects/TerionUi.png'
-import SandJRec from '../Assets/images/Projects/SandJRec.png'
+import JavaSololearn from '../Assets/images/Honurs/JavaSololearn.png'
+import Ibm from '../Assets/images/Honurs/Ibm.jpg'
+import SqlHackerrank from '../Assets/images/Honurs/SqlHackerrank.jpg'
 // import Mamcet from '../Assets/images/Events/Mamcet.jpg'
 import MamcetJava from '../Assets/images/Events/MamcetJava.jpg'
 // import alagappa from '../Assets/images/Events/alagappa.jpg'
-import PersonalProfile from '../Assets/images/Projects/PersonalProfile.png'
+// import PersonalProfile from '../Assets/images/Honurs/PersonalProfile.png'
 import mamcet2ndyr from '../Assets/images/Events/mamcet2ndyr.jpg'
 import alagappaclass from '../Assets/images/Events/alagappaclass.jpg'
 
 const HonursPage = () => {
     const projectsData = [
-        { title: 'Vellamal Intern Program', description: 'Successfully organized and executed the 14-day Vellamal Intern Program.',pic:tempoIot , programAbb:"Vellamal InternShip Program"},
-        { title: 'Mamcet Java Trainer', description: 'Guided MAMCET final year students as a Java Trainer, fostering their programming expertise.',pic:TerionUi , programAbb:"Mamcet Java" },
-        { title: 'Mamcet Java Trainer', description: 'Provided real-world Object-Oriented Programming (OOPs) training for MAMCET second-year students.',pic:MamcetJava , programAbb:"Mamcet" },
-        { title: 'Alagappa Inauguration', description: 'Attended the inauguration function at Alagappa College.',pic:SandJRec , programAbb:"Alagappa College" },
-        { title: 'Alagappa College', description: 'Imparted industry guidelines to students for professional development.',pic:PersonalProfile , programAbb:"Alagappa College" },
-        { title: 'Alagappa Python', description: 'Instructed Alagappa pre-final year students in Python, refining logical and programming skills.',pic:alagappaclass , programAbb:"Alagappa College" }
+        { title: 'Java Core', description: 'Java Core certified by SoloLearn demonstrates proficiency in Java programming fundamentals.',pic:JavaSololearn , programAbb:"Java Core"},
+        { title: 'Web Development', description: 'Web Development course by IBM provides comprehensive training in web technologies.',pic:Ibm , programAbb:"Web Development" },
+        { title: 'SQL', description: 'SQL certificate offered by HackerRank validates proficiency in SQL querying skills.',pic:SqlHackerrank , programAbb:"SQL" },
+        // { title: 'Mamcet Java Trainer', description: 'Provided real-world Object-Oriented Programming (OOPs) training for MAMCET second-year students.',pic:MamcetJava , programAbb:"Mamcet" },
+        // { title: 'Alagappa College', description: 'Imparted industry guidelines to students for professional development.',pic:PersonalProfile , programAbb:"Alagappa College" },
+        // { title: 'Alagappa Python', description: 'Instructed Alagappa pre-final year students in Python, refining logical and programming skills.',pic:alagappaclass , programAbb:"Alagappa College" }
     ];
     const ProjectCard = ({ title, description , pic , programAbb}) => (
         <Card sx={{ height: '100%' }}>

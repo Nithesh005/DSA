@@ -3,20 +3,20 @@ import tempoIot from '../Assets/images/Projects/tempoIot.png'
 import TerionUi from '../Assets/images/Projects/TerionUi.png'
 import SandJRec from '../Assets/images/Projects/SandJRec.png'
 // import Mamcet from '../Assets/images/Events/Mamcet.jpg'
-import MamcetJava from '../Assets/images/Events/MamcetJava.jpg'
 // import alagappa from '../Assets/images/Events/alagappa.jpg'
 import PersonalProfile from '../Assets/images/Projects/PersonalProfile.png'
-import mamcet2ndyr from '../Assets/images/Events/mamcet2ndyr.jpg'
+import Roomrental from '../Assets/images/Projects/Roomrental.jpg'
+import MediRemainder from '../Assets/images/Projects/MediRemainder.png'
 import alagappaclass from '../Assets/images/Events/alagappaclass.jpg'
 
 const ProductsPage = () => {
     const projectsData = [
-        { title: 'Vellamal Intern Program', description: 'Successfully organized and executed the 14-day Vellamal Intern Program.',pic:tempoIot , programAbb:"Vellamal InternShip Program"},
-        { title: 'Mamcet Java Trainer', description: 'Guided MAMCET final year students as a Java Trainer, fostering their programming expertise.',pic:TerionUi , programAbb:"Mamcet Java" },
-        { title: 'Mamcet Java Trainer', description: 'Provided real-world Object-Oriented Programming (OOPs) training for MAMCET second-year students.',pic:MamcetJava , programAbb:"Mamcet" },
-        { title: 'Alagappa Inauguration', description: 'Attended the inauguration function at Alagappa College.',pic:SandJRec , programAbb:"Alagappa College" },
-        { title: 'Alagappa College', description: 'Imparted industry guidelines to students for professional development.',pic:PersonalProfile , programAbb:"Alagappa College" },
-        { title: 'Alagappa Python', description: 'Instructed Alagappa pre-final year students in Python, refining logical and programming skills.',pic:alagappaclass , programAbb:"Alagappa College" }
+        { title: 'TempoIot', description: 'Stream live data through a socket to plot real-time graphs..',pic:tempoIot , programAbb:"TempoIot"},
+        { title: 'Terion', description: 'A distributor management system automating inventory, orders, customer management, and generating invoices.',pic:TerionUi , programAbb:"Terion" },
+        { title: 'Job Portal', description: 'A job portal is an online platform that connects job seekers with employers, facilitating the process of job searching.',pic:SandJRec , programAbb:"Alagappa College" },
+        { title: 'Personal Profile', description: 'A personal website is a digital platform for individuals to display their portfolio, achievements, and interests online.',pic:PersonalProfile , programAbb:"Personal Profile" },
+        { title: 'Room Rental Managemanet', description: 'Room rental management system: bookings, tenants, payments, maintenance tracking simplified.',pic:Roomrental , programAbb:"Room Rental Managemanet" },
+        { title: 'Medical Remainder App', description: 'Medical reminder: software to schedule and remind about medical appointments/tasks.',pic:MediRemainder , programAbb:"Medical Remainder App" },
     ];
     const ProjectCard = ({ title, description , pic , programAbb}) => (
         <Card sx={{ height: '100%' }}>
