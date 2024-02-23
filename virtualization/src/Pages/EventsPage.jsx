@@ -40,7 +40,6 @@ const EventsPage = () => {
     );
     return (
         <>
-        <br /><br /><br /><br />
             <div className="projects">
                 <div className="projectTittle text-center font-bold text-2xl">
                     Events

@@ -4,13 +4,15 @@ import NameIntro from '../Componentes/NameIntro';
 import ProjectsPage from './EventsPage';
 
 const IndexPage = () => {
-    
+
     return (
         <>
             <div className="containterpage md:mx-8">
                 <br /><br /><br /><br />
                 <NameIntro />
-                <ProjectsPage/>
+                <br />
+                <br />
+                <ProjectsPage />
                 <br />
             </div>
         </>

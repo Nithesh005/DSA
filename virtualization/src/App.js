@@ -21,6 +21,7 @@ import AboutMePage from './Pages/AboutMePage';
 import EventsPage from './Pages/EventsPage';
 import ProductsPage from './Pages/ProductsPage';
 import HonursPage from './Pages/HonursPage';
+import Footer from './Componentes/Footer';
 function App() {
   AOS.init();
   const [theme, setTheme] = useState('dark1');
@@ -35,6 +36,8 @@ function App() {
           <Route path="/Honurs" element={<HonursPage />} />
           <Route path="/contact" element={<IndexPage />} />
         </Routes>
+        <br/>
+        <Footer />
       </BrowserRouter>
 
 

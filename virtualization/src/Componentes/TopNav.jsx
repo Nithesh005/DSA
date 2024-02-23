@@ -23,7 +23,7 @@ const TopNav = () => {
 
     return (
         <>
-            <div className="bg-gray-800 p-4 sm:flex md:mt-2 sm:justify-between sm:items-center md:items-center md:mx-8 md:rounded-xl absolute nav_parrent">
+            <div className="bg-gray-800 p-4 sm:flex md:mt-2 sm:justify-between sm:items-center md:items-center md:mx-8 md:rounded-xl absolute nav_parrent" style={{ zIndex: 1 }}>
                 {isSmallScreen && (
                         <IconButton className="text-white" color="inherit" onClick={handleSidebarToggle}>
                             <MenuIcon />
@@ -66,14 +66,12 @@ const TopNav = () => {
                 <div
                     className="p-4 bg-gray-200 h-full w-64"
                 >
-                    {/* Sidebar content goes here */}
                     <p className="text-lg font-bold mb-4">Sidebar Content</p>
                     <ul className="space-y-2">
-                        <li className="text-black"><Link to="/" className="block py-1 px-2 rounded hover:bg-gray-300">HOME</Link></li>
-                        <li className="text-black"><Link to="/Events" className="block py-1 px-2 rounded hover:bg-gray-300">EVENTS</Link></li>
-                        <li className="text-black"><Link to="/Projects" className="block py-1 px-2 rounded hover:bg-gray-300">PROJECTS</Link></li>
-                        <li className="text-black"><Link to="/Honurs" className="block py-1 px-2 rounded hover:bg-gray-300">HONURS</Link></li>
-                        {/* <li className="text-white"><Link to="/contact" className="block py-1 px-2 rounded hover:bg-gray-300">Contact Us</Link></li> */}
+                        <li className="text-black" onClick={handleSidebarToggle}><Link to="/" className="block py-1 px-2 rounded hover:bg-gray-300">HOME</Link></li>
+                        <li className="text-black" onClick={handleSidebarToggle}><Link to="/Events" className="block py-1 px-2 rounded hover:bg-gray-300">EVENTS</Link></li>
+                        <li className="text-black" onClick={handleSidebarToggle}><Link to="/Projects" className="block py-1 px-2 rounded hover:bg-gray-300">PROJECTS</Link></li>
+                        <li className="text-black" onClick={handleSidebarToggle}><Link to="/Honurs" className="block py-1 px-2 rounded hover:bg-gray-300">HONURS</Link></li>
                     </ul>
                 </div>
             </Drawer>
